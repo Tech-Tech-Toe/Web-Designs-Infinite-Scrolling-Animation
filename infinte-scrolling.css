@@ -1,0 +1,37 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #282c34;
+}
+
+.scrolling-icons {
+    display: flex;
+    width: 200%;
+    animation: scroll 10s linear infinite;
+}
+
+.scrolling-icons i {
+    font-size: 4rem;
+    color: #61dafb;
+    margin: 0 1rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.scrolling-icons i:hover {
+    transform: scale(1.2);
+    color: #ffdd57;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
